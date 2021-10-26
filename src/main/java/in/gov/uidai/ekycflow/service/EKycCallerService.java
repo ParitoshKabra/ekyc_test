@@ -54,7 +54,8 @@ public class EKycCallerService {
                 throw new Exception("Offline eKYC API returned with 0 bytes in response body");
             }
             if(result.getStatusCode().equals(HttpStatus.OK)) {
-                log.debug("Unmarshalling data for eKYC call");
+//                log.debug("Unmarshalling data for eKYC call");
+                System.out.println("Unmarshalling data for eKYC call");
                 OfflineEkycXMLResponse offlineEkycXMLResponse = objectMapper.readValue(result.getBody(), OfflineEkycXMLResponse.class);
                 if(!(offlineEkycXMLResponse.getStatus().equals("Success"))) {
                     throw new Exception("Did not get proper response from offline eKYC server");
@@ -66,7 +67,8 @@ public class EKycCallerService {
             }
         }
         catch (Exception e) {
-            log.error("Error occurred while accessing url");
+//            log.error("Error occurred while accessing url");
+            System.out.println("Error occurred while accessing url");
             throw new Exception("Error",e);
         }
     }

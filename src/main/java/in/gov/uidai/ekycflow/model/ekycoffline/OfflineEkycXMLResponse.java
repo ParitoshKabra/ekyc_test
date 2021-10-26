@@ -19,6 +19,42 @@ public class OfflineEkycXMLResponse implements Serializable {
         return eKycXML;
     }
 
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setUidNumber(String uidNumber) {
+        this.uidNumber = uidNumber;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public void setRequestDate(LocalDate requestDate) {
+        this.requestDate = requestDate;
+    }
+
+    public String getUidNumber() {
+        return uidNumber;
+    }
+
+    public LocalDate getRequestDate() {
+        return requestDate;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
     public void seteKycXML(String eKycXML) {
         this.eKycXML = eKycXML;
     }

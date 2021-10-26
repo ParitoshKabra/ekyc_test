@@ -42,7 +42,7 @@ public class OtpCallerService {
                 throw new Exception("OTP API returned with 0 bytes in response body");
             }
             if(result.getStatusCode().equals(HttpStatus.OK)) {
-                log.debug(String.format("Unmarshalling data for OTP"));
+//                log.debug(String.format("Unmarshalling data for OTP"));
                 OtpResponse otpResponse = objectMapper.readValue(result.getBody(), OtpResponse.class);
                 System.out.println(otpResponse.toString());
                 if(otpResponse.getStatus().equals("Failure")) {
@@ -56,7 +56,7 @@ public class OtpCallerService {
         }
         catch (Exception e)
         {
-            log.error("Error occurred while accessing url");
+//            log.error("Error occurred while accessing url");
             throw new Exception("Error",e);
         }
     }

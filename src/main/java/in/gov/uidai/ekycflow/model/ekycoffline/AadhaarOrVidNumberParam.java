@@ -17,4 +17,20 @@ public class AadhaarOrVidNumberParam {
     private String unifiedAppRequestTxnId;
     private String uid;
     private String vid;
+
+    public void setTxnNumber(String txnNumber) {
+        this.txnNumber = txnNumber;
+    }
+
+    public void setShareCode(String shareCode) {
+        this.shareCode = shareCode;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
+
+    public void setOtp(String otp) {
+        this.otp = otp;
+    }
 }

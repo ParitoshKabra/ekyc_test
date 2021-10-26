@@ -41,7 +41,8 @@ public class CaptchaCallerService {
                 throw new Exception("Captcha returned with 0 bytes in response body");
             }
             if(result.getStatusCode().equals(HttpStatus.OK)) {
-                log.debug(String.format("Unmarshalling data for captcha call"));
+//                log.debug(String.format("Unmarshalling data for captcha call"));
+                System.out.println("Unmarshalling data for captcha call");
                 CaptchaResponse captchaResponse = objectMapper.readValue(result.getBody(), CaptchaResponse.class);
                 System.out.println(captchaResponse.toString());
                 if(!(captchaResponse.getStatusCode()==200)) {
@@ -55,7 +56,8 @@ public class CaptchaCallerService {
         }
         catch (Exception e)
         {
-            log.error("Error occurred while accessing url");
+//            log.error("Error occurred while accessing url");
+            System.out.println("Error occurred while accessing url");
             throw new Exception("Error",e);
         }
 

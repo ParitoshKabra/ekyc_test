@@ -14,4 +14,28 @@ public class CaptchaResponse {
     private String requestedDate;
     private int statusCode;
     private String message;
+
+    public int getStatusCode() {
+        return statusCode;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public String getRequestedDate() {
+        return requestedDate;
+    }
+
+    public String getCaptchaTxnId() {
+        return captchaTxnId;
+    }
+
+    public String getCaptchaBase64String() {
+        return captchaBase64String;
+    }
 }

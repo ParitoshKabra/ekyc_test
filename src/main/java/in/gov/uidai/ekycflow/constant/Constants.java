@@ -6,7 +6,7 @@ public final class Constants {
     public static final String EKYC_APP_ID = "appID";
     public static final String EKYC_TRANSACTION_ID = "transactionId";
     public static final String EKYC_APP_ID_VALUE = "PORTAL";
-    public static final String EKYC_SHARE_CODE = "1234"; // Password to protect zip file containing offline eKYC XML
+    public static final String EKYC_SHARE_CODE = "1729"; // Password to protect zip file containing offline eKYC XML
 
     public static final String CAPTCHA_LANG_CODE = "en";
     public static final String CAPTCHA_LENGTH = "3";
@@ -18,8 +18,8 @@ public final class Constants {
     public static final String OTP_APPID_VALUE = "MYAADHAAR";
     public static final String OTP_ACCEPT_LANGUAGE_VALUE = "en_in";
 
-    public static final String STAGING_UID = "";
+    public static final String STAGING_UID = "956981498120";
     public static final String TRANSACTION_ID = "MYAADHAAR:59142477-3f57-465d-8b9a-75b28fe48725";
 
-    public static final String DIRECTORY_PATH = "";
+    public static final String DIRECTORY_PATH = "C:\\Users\\conqu\\UIDAI_Hackathon\\eKYC_";
 }
